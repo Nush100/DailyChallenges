@@ -1,25 +1,27 @@
 String.prototype.reverseString = function() {
-
-    //create a constant to assign word length
-    const wordLength = this.length;
-
-    //check whether the string is empty
-    if(wordLength < 1 ) throw Error ("The string is empty");
-
-    //define leters array
-    let letters = [];
-
-    /*assign values for letters array */
-    for(let i = 0; i < wordLength; i++){
-
-        // the value of lettershould be the char value at wordLength - (i+1)
-        letters[i] = this.charAt(wordLength - i - 1);
-
-    }
-
-    //join("") use to join the values of the array without commas
-    return letters.join("");
     
+    //base error handling
+    if(!this || typeof this !== 'string') throw new Error('Invalid string input')
+
+    //Iterative Solution
+    let str = this.split('');
+    //introduce pointers
+    let i = 0;
+    let j = str.length - 1;
+    let temp = null;
+    
+    //loop and swap elements in the same string array
+    while(i < j){
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+        
+        i++;
+        j---;
+    }
+    
+    
+    return str.join('');
 }
 
 //To call the function
