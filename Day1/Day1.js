@@ -17,7 +17,7 @@ String.prototype.reverseString = function() {
         str[j] = temp;
         
         i++;
-        j---;
+        j--;
     }
     
     
