@@ -1,5 +1,6 @@
 const Intersection = (first, second) => {
 
+    //initialize the pointers
     let commanElements = [];
     let min;
 
@@ -21,4 +22,4 @@ const Intersection = (first, second) => {
  
 
 //call the function
-console.log(Intersection([1, 3, 5, 9, 8], [6, 2, 5, 9, 0, 8, 8]));
+//Intersection([1, 3, 5, 9, 8], [6, 2, 5, 9, 0, 8, 8]);
