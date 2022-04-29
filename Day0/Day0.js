@@ -12,7 +12,7 @@ const reverseString = (word) => {
     for(let i = 0; i < word.length; i++){
 
         // the value of lettershould be the char value at wordLength - (i+1)
-        letters[i] = word.charAt(wordLength - i - 1);
+        letters[i] = word.charAt(word.length - i - 1);
 
     }
 
@@ -22,7 +22,7 @@ const reverseString = (word) => {
 }
 
 //to call the function
-//reverseString("abcde");
+console.log(reverseString("abcde"));
 
 
 
