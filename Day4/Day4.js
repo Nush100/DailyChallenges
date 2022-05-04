@@ -1,3 +1,5 @@
+// Hint: You can use multi pointer approach and RegEx to do this
+
 const ReverseOnlyAlphebet = (word) => {
 
     //define pointers
